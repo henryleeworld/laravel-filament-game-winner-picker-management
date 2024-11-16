@@ -2,14 +2,14 @@
 
 namespace App\Filament\Resources;
 
-use App\Models\Game;
-use Filament\Tables;
-use Filament\Resources\Form;
-use Filament\Resources\Table;
-use Filament\Resources\Resource;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Forms\Components\TextInput;
 use App\Filament\Resources\GameResource\Pages;
+use App\Models\Game;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Form;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 
 class GameResource extends Resource
 {
@@ -52,7 +52,7 @@ class GameResource extends Resource
                 TextColumn::make('name')
                     ->label(__('Name')),
             ])
-            ->prependActions([
+            ->actions([
                 Tables\Actions\Action::make('Pick winners')
                     ->label(__('Pick winners'))
                     ->color('success')

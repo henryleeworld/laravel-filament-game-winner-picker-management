@@ -1,8 +1,9 @@
-# Laravel 10 Filament 遊戲獲勝者選拔管理
+# Laravel 11 Filament 遊戲獲勝者選拔管理
 
 Filament 遊戲獲勝者選拔管理採用快速建立簡捷的 TALL（Tailwind CSS、Alpine.js、Laravel 和 Livewire）堆疊應用程式的工具組，每個遊戲項目依排名順序選拔出優勝者。
 
 ## 使用方式
+- 打開 php.ini 檔案，啟用 PHP 擴充模組 intl 和 zip，並重啟服務器。
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
 ```sh
 $ git clone
@@ -34,8 +35,5 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/sNeATIV.png)
-> 使用現有的帳號登入
-
-![](https://i.imgur.com/jyzrY5K.gif)
+![](https://i.imgur.com/nP1Ekyq.gif)
 > 對優勝者列出冠軍、亞軍、季軍、殿軍等名次

@@ -9,10 +9,10 @@ use Illuminate\Database\Seeder;
 class GameSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeders.
      */
     public function run(): void
     {
-        Game::factory(10)->create();
+        Game::factory()->count(10)->create();
     }
 }
